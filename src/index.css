@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.rdp-custom {
+  @apply bg-white rounded-lg;
+}
+
+.rdp-custom .rdp-button:hover:not([disabled]):not(.rdp-day_selected) {
+  @apply bg-purple-100;
+}
+
+.rdp-custom .rdp-day_selected {
+  @apply bg-purple-600 text-white;
+}
+
+.rdp-custom .rdp-day_selected:hover {
+  @apply bg-purple-700;
+}
+
+.rdp-custom .rdp-button:focus {
+  @apply bg-purple-100 outline-purple-600;
+}
